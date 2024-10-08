@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikara Ishwarlall | Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/63052dda00.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()" style="color: #ee09fe9e;"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" style="color: #ee09fe9e;"></i>
+
+
+            </nav>
+            <div class="header-text">
+
+                <h1>Hi, I'm <span>Nikara</span><br><small> A Robotics and Artifical Intelligence
+                        Enthusiast</small><br> <small class="explore-question">Are you ready to explore the intersection
+                        of technology and creativity?</small>
+                </h1>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image66.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title"> Get to Know Me</h1>
+                    <p>Hi, I’m Nikara Ishwarlall, a passionate Robotics student at Eduvos, South Africa. I thrive on
+                        solving complex challenges and pushing the boundaries of technology, particularly in the fields
+                        of robotics and artificial intelligence. My journey is fueled by a deep curiosity about how
+                        machines can learn, adapt, and work alongside humans to transform the world around us. When I’m
+                        not immersed in code or tinkering with hardware, I’m exploring innovative solutions that bridge
+                        the gap between imagination and reality. Welcome to my world of endless possibilities!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Educations</p>
+                    </div>
+
+
+
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <h3>Technical Skills</h3> <!-- Added Technical Skills heading -->
+                        <ul>
+                            <li><span>Machine Learning & AI</span><br>Implementing machine learning algorithms using
+                                Python libraries like Scikit-learn, TensorFlow, and PyTorch</li>
+                            <li><span>Robotics Operating Systems (ROS)</span><br>Familiarity with ROS for robot software
+                                development, including package creation, message passing, and service implementation.
+                            </li>
+                            <li><span>Web Development & Design</span><br>HTML, CSS, basic JavaScript, responsive design
+                                principles</li>
+                            <li><span>Programming Languages </span><br>Python, C++, Java...</li>
+                            <li><span>Maths (Engineering, Control Systems)</span><br>Applying mathematical concepts to
+                                solve engineering problems, including control systems theory</li>
+                            <li><span>Data Analysis</span><br>Interpreting and analyzing data using Python libraries
+                                like NumPy, Pandas, and Matplotlib</li>
+                            <li><span>Python Libraries & Tools</span><br>NumPy, Pandas, Matplotlib, Scikit-learn,
+                                TensorFlow, PyTorch, ROS, Git, Visual Studio Code, etc.</li>
+                            <li><span>Databases</span><br>Working with SQL databases and database management principles
+                            </li>
+                            <li><span>MATLAB</span><br>Utilizing MATLAB for algorithm development, simulation, and
+                                analysis in robotics, including Simulink for modeling robotic systems.</li>
+                        </ul>
+
+                        <h3>Soft Skills</h3> <!-- Added Soft Skills heading -->
+                        <ul>
+                            <li><span>Problem-Solving</span><br>Analyzing and addressing challenges in robotic system
+                                design and implementation.</li>
+                            <li><span>Collaboration</span><br>Experience working on group projects or collaborative
+                                coding.</li>
+                            <li><span>Communication</span><br>Explaining technical concepts clearly to both technical
+                                and non-technical audiences.</li>
+                            <li><span>Time Management</span><br>Managing academic workload alongside personal projects.
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Security Intern || TKN Security Company, Durban<br>
+                                    June 2023 – December 2023</span>
+
+
+                            <li>Assisted in the implementation of security protocols and procedures.</li>
+                            <li>Participated in on-site security assessments and risk analysis.</li>
+                            <li>Collaborated with team members to develop security awareness training for
+                                employees.</li>
+                            <li>Supported the integration of new security technologies and systems.</li>
+                            <li>Documented incidents and prepared reports for management review.</li>
+
+
+
+                            <!---------ADD MORE EXPERIENCES HERE:----  
+                            <li><span>2023</span><br> [Enter Experience]</li>
+                            <li><span>2020</span><br> [ENTER Experience]</li>
+                                                                                ------>
+                        </ul>
+                    </div>
+
+
+
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Eduvos, South Africa || Current</span><br>Bachelor of Information
+                                Sciences:Robotics<br>Expected Graduation: 2025 </li>
+                            <li><span>Varsity College</span><br> Bachelor of Computer and Information Sciences in
+                                Application Development
+                                Developement<br>Coursework completed: 1year (2022)</li>
+                            <li><span>Solvista Secondary School</span><br>Bachelors Degree Pass</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-------------------Services------------------->
+    <div id="services">
+        <div id="container">
+            <h1 class="sub-title">How I Can Help</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-wand-magic-sparkles" style="color: #B197FC;"></i>
+                    <h2> Website Design and Development</h2>
+                    <ul>
+                        <li>Creating responsive websites for individuals or small businesses</li>
+                        <li>Offering basic website maintenance and updates</li>
+                        <li>Customizing templates for WordPress or other platforms</li>
+                    </ul>
+                    <!-------               <a href="#">Learn More</a>    ------>
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-circle-nodes" style="color: #B197FC;"></i>
+                    <h2> Programming and Coding Assistance</h2>
+                    <ul>
+                        <li>Help with coding assignments, debugging, and understanding programming concepts in Python,
+                            C++, or Java</li>
+                        <li>Teaching basic coding principles to beginners</li>
+                    </ul>
+                    <!-------             <a href="#">Learn More</a>      ---->
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-layer-group" style="color: #B197FC;"></i>
+                    <h2> Robotics Projects Consultation</h2>
+                    <ul>
+                        <li>Assisting in the design and development of basic robotics projects for school or personal
+                            use</li>
+                        <li>Providing support in building and programming small robots or AI models</li>
+
+                    </ul>
+                    <!-----    <a href="#">Learn More</a>  ---->
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen-to-square" style="color: #B197FC;"></i>
+                    <h2> Technical Writing and Documentation</h2>
+                    <ul>
+                        <li>Writing technical reports, project documentation, or manuals for small technical projects
+                        </li>
+                        <li>Offering editing services for research papers or assignments in the tech field</li>
+                        <li>Tutoring in Math for Control Systems<br>Teaching key mathematical concepts used in control
+                            systems, including differential equations, linear algebra, and system dynamics.</li>
+                        <li>Data Analysis Reports:<br>Creating reports that summarize research findings, including
+                            visualizations and interpretations of data, to assist in decision-making processes.</li>
+                        <li>Research Papers:<br>Assisting students or professionals with writing and formatting research
+                            papers in robotics, AI, or related fields.</li>
+
+                    </ul>
+                    <!-------         <a href="#">Learn More</a>    ---->
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-------------------Portfolio------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> Highlights</h1>
+            <div class="work-list">
+
+
+
+                <!---------ADD  PROJECTS HERE:-------------->
+
+
+                <!---Project1 Image--->
+                <div class="work">
+                    <img src="images/image11.jpg">
+                    <div class="layer">
+                        <h3>Network Security Infrastructure </h3>
+                        <p>As part of my Network Security module at Eduvos, I collaborated with a team to design and
+                            implement a secure, high-speed network for a simulated environment of Belmand College in
+                            South Africa. Using Cisco Packet Tracer, we developed a detailed network plan connecting
+                            three campuses to ensure seamless access for over 2,000 students and 100 staff members.</p>
+                        <a
+                            href="https://www.linkedin.com/pulse/network-security-infrastructure-design-nikara-ishwarlall-xbh1f"><i
+                                class="fa-solid fa-link" style="color: #B197FC;"></i></a>
+                        <!---Project1 Link icon--->
+                    </div>
+                </div>
+
+
+                <!---Project2 Image--->
+                <div class="work">
+                    <img src="images/image8.jpg">
+                    <div class="layer">
+                        <h3> Personal Portfolio Website</h3>
+                        <p>This personal portfolio website showcases my journey as a Robotics student at Eduvos, South
+                            Africa. Designed to highlight my skills, projects, and experiences in robotics and AI, the
+                            website serves as a platform for potential employers and collaborators to learn more about
+                            my work and interests.</p>
+                        <a
+                            href="https://www.linkedin.com/pulse/you-ready-explore-intersection-technology-creativity-ishwarlall-8uplf"><i
+                                class="fa-solid fa-link" style="color: #B197FC;"></i></a>
+                        <!---Project1 Link icon--->
+                    </div>
+                </div>
+
+
+
+                <!---Project3  Image---
+                <div class="work">
+                    <img src="images/image9.jpg">
+                    <div class="layer">
+                        <h3>[PROJECT 3]</h3>
+                        <p>[Description of project3]</p>
+                        <a href="#"><i class="fa-solid fa-link" style="color: #B197FC;"></i></a>
+                       
+                    </div>
+                </div>        ----->
+
+
+
+                <!---Project4  Image---    
+                <div class="work">
+                     <img src="images/image9.jpg">
+                     <div class="layer">
+                        <h3>[PROJECT 4]</h3>
+                        <p>[Description of project4]</p>
+                        <a href="#"><i class="fa-solid fa-link" style="color: #B197FC;"></i></a>    ---Project1 Link icon---
+                <div                                                        --->
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-------------------------Contact---------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="contact-left">
+                    <h1>Get in Touch</h1>
+                    <p><i class="fa-solid fa-envelope"></i>nikara0405@gmail.com</p>
+                    <div class="social-icons">
+                        <a
+                            href="https://www.linkedin.com/in/nikara-ishwarlall-761095251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a
+                            href="https://www.instagram.com/nikara.i/?next=https%3A%2F%2Fwww.instagram.com%2Fexplore%2Fsearch%2F%3F__coig_login%3D1 "><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+
+                    <!-----ADD CV FILE HERE:--->
+                    <!------<a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>   ---------->
+                    <!------Enter PDF FILE Here---->
+
+
+
+                </div>
+
+
+                <div class="contact-Right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-------------------Reviews Section------------------->
+
+    <div id="reviews">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="review-left">
+                    <h1>Add a Review</h1>
+                    <p><i class="fa-regular fa-message" style="color: #B197FC;"></i>Share your experience and thoughts
+                        about my portfolio!</p>
+
+                    <form class="reviewform" name="submit-review-to-google-sheet">
+                        <input type="text" name="Review-name" placeholder="Your Name / Company" required
+                            autocomplete="name">
+                        <textarea name="Review-message" rows="6" placeholder="Your Message" required
+                            autocomplete="off"></textarea>
+                        <button type="submit" class="btn3 btn4">Submit</button>
+                    </form>
+                    <span id="reviewmsg"></span>
+                </div>
+
+
+                <div class="review-right">
+                    <h1>Recent Reviews</h1>
+                    <div class="review-list">
+                        <div class="review-item">
+                            <strong>Amielio Gounden:</strong>
+                            <p>"Impressive portfolio! I love how you showcased your projects and skills. Keep up the
+                                great work!"</p>
+                        </div>
+                        <div class="review-item">
+                            <strong>Kaylene Ashleigh Parmanand:</strong>
+                            <p>"Your portfolio looks amazing! The design is sleek, and it's easy to navigate. Great job
+                                on highlighting your work!"</p>
+                        </div>
+                        <div class="review-item">
+                            <strong>Anonymous</strong>
+                            <p>"Very well structured and informative. A fantastic showcase!"</p>
+                        </div>
+                        <div class="review-item">
+                            <strong>Kaedyn Naicker:</strong>
+                            <p>"Fantastic work, Nikara! Your portfolio is well-organized and showcases your impressive
+                                skills in robotics and AI effectively. I'm excited to see what you do next!"</p>
+                        </div>
+                        <div class="review-item">
+                            <strong>Kwanele Mahaye</strong>
+                            <p>"Awesome portfolio! I really liked how you presented your projects. It shows your
+                                dedication and talent in robotics."</p>
+                        </div>
+                        <div class="review-item">
+                            <strong>Kiara Ishwarlall</strong>
+                            <p>"Really impressed by your portfolio! You did a great job demonstrating your growth and
+                                projects as a robotics student."
+                            </p>
+                        </div>
+
+                        <!-- Add more reviews here -->
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="copyright">
+        <p>© 2024 Nikara Ishwarlall. All rights reserved</p>
+    </footer>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+
+    </script>
+
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+
+
+
+    <!-------------------Google Sheet- CONTACT------------------->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyol0QDOTfeRDRviYT3xabOrnWV0kfcW8iCdIw1qCgUryalcLa0AEKzb045_U9mvzoDTA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+
+
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+    <!-------------------Google Sheet- REVIEWS------------------->
+
+    <script>
+        const reviewscriptURL = 'https://script.google.com/macros/s/AKfycbxKFQLJlD6uPnky6W0aF6--PyfD7zt1vkwJEMrzsDce777iEH6YbUwshjoLLb-dktHvLg/exec';
+        const reviewform = document.forms['submit-review-to-google-sheet'];
+        const reviewmsg = document.getElementById("reviewmsg");
+
+        reviewform.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(reviewscriptURL, { method: 'POST', body: new FormData(reviewform) })
+                .then(response => {
+                    reviewmsg.innerHTML = "Review Sent Successfully!";
+                    setTimeout(function () {
+                        reviewmsg.innerHTML = "";
+                    }, 5000);
+                    reviewform.reset()
+                })
+
+
+                .catch(error => {
+                    reviewmsg.innerHTML = "Error! Please Try Again Later.";
+                    reviewmsg.style.color = "#ff0000"; // Error message in red
+                    console.error('Error!', error.message);
+                });
+        });
+    </script>
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const reviewsSection = document.getElementById("reviews");
+            const reviewItems = document.querySelectorAll('.review-item');
+
+            // Callback for when section and items are in view
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Trigger animation for review section
+                        if (entry.target === reviewsSection) {
+                            reviewsSection.classList.add('reviews-visible');
+                        }
+
+                        // Trigger animation for individual review items
+                        if (entry.target.classList.contains('review-item')) {
+                            entry.target.classList.add('review-item-visible');
+                        }
+
+                        // Stop observing once the animation is triggered
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+
+            // Create an Intersection Observer for reviews section and items
+            const observer = new IntersectionObserver(observerCallback, {
+                threshold: 0.1 // Adjust the threshold to control when animation triggers
+            });
+
+            // Observe the reviews section
+            observer.observe(reviewsSection);
+
+            // Observe each review item
+            reviewItems.forEach(review => {
+                observer.observe(review);
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

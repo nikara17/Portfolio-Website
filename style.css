@@ -1,0 +1,1129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000000;
+    color: #fff;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/image222.jpg);
+    background-size: 30%;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+}
+
+
+#header::after {
+    content: '';
+    display: block;
+    width: 80%;
+    /* Adjust the width of the border line */
+    margin: 230px auto 0 auto;
+    /* Center the border line and add some space */
+    border-bottom: 5px solid #6e656c;
+    /* The color and thickness of the line */
+}
+
+
+
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.logo {
+    width: 350px;
+    /* Adjust the size of the logo */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #680467;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s ease;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin: top 20%;
+    /*font: size 30px;*/
+    text-align: right;
+    padding-right: 10%;
+    /* Add some padding to the left for spacing */
+
+}
+
+
+.header-text h1 {
+    font-family: "Oswald", sans-serif;
+    /* Replace with the actual font name */
+    margin-top: 20px;
+    text-align: right;
+    /* Aligns the text to the left */
+    font-size: 60px;
+
+}
+
+
+.header-text h1 span {
+    color: #fff6ff;
+    /* Base text color */
+    text-shadow:
+        0 0 5px #680467,
+        /* Reduced blur radius */
+        0 0 10px #5d045b8c,
+        /* Reduced blur radius */
+        0 0 15px #f43bb3;
+    /* Adjusted color for softer glow */
+}
+
+.header-text h1 small {
+    /* Style for the smaller text */
+    font-size: 24px;
+    /* Adjust font size to make it smaller */
+    display: block;
+    /* Ensure it's on a new line */
+    margin-top: 10px;
+    /* Add margin for spacing */
+    color: #fff;
+    /* Optional: Change color for contrast */
+}
+
+/* Style for the question */
+.explore-question {
+    /* font-family: "Pacifico", cursive;*/
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    /* Adjust the font size for the question */
+
+
+    color: #55394f;
+    /* Change the color for emphasis */
+    margin-top: 80px;
+    /* Add margin for spacing */
+    text-shadow:
+        0 0 5px #f53d96cb,
+        /* Subtle glow */
+        0 0 10px #351151;
+    /* Adjusted shadow for a softer effect */
+    animation: fadeIn 4s, move 2s infinite alternate;
+    /* Add move animation */
+    /* Optional: add a fade-in animation */
+
+}
+
+/* Optional: Animation for the question */
+@keyframes fadeIn {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation for subtle movement */
+@keyframes move {
+    from {
+        transform: translateY(0);
+        /* Start at original position */
+    }
+
+    to {
+        transform: translateY(-7px);
+        /* Move up slightly */
+    }
+}
+
+
+
+/*------------about----------------*/
+#about {
+    padding: 50px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #a40b799f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: width 0.5s ease;
+
+
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span {
+    color: #aa6cc3;
+    font-size: 14 px;
+
+
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Technical/soft skills Heading Styles */
+h3 {
+    font-size: 15px;
+    /* Adjust as needed */
+    font-weight: 500;
+    /* Make it bold */
+    color: #fff;
+    /* Match your theme */
+    margin-top: 20px;
+    /* Space above */
+    margin-bottom: 10px;
+    /* Space below */
+}
+
+/*------------Services----------------*/
+#services {
+    padding: 30px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.services-list div {
+    background: #3d3c3dfb;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    color: #816979;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block
+}
+
+.services-list div:hover {
+    background: #8e3e83;
+    transform: translateY(-10px);
+
+}
+
+
+/*------------Portfolio----------------*/
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*grid-template-columns: repeat(3, 1fr);
+    /* 3 equal-width columns */
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding: 0;
+
+}
+
+.work {
+    flex-basis: 45%;
+    /* Adjust the basis to allow two items side by side on larger screens */
+    margin-bottom: 20px;
+    /* Add spacing between items */
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    height: 300px;
+
+}
+
+.work img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    /* Ensures the image fits neatly inside its container */
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, rgb(141, 11, 115), rgba(255, 0, 79, 0));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #8a6285;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    border: 1px solid #8a6285;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffa6f0;
+    transition: background 0.5s;
+
+}
+
+.btn:hover {
+    background: #8a6285;
+    color: #ffffff;
+    /* Change hover text color here */
+
+}
+
+
+/*------------Contact----------------*/
+
+.contact-left {
+    flex-basis: 35%;
+
+}
+
+.contact-Right {
+    flex-basis: 60%;
+
+}
+
+.contact-left p {
+    margin-top: 30px;
+
+}
+
+.contact-left p i {
+    margin-right: 15px;
+    color: #8e3e83;
+    font-size: 25PX;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #8e3e83;
+    transform: translate(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #9b59b6;
+    color: #ffffff;
+    /* Change this text color for btn2 */
+    padding: 14px 50px;
+    /* Padding for size */
+    font-size: 18px;
+    /* Font size */
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none;
+    /* No underline */
+    transition: background 0.3s ease, transform 0.2s ease;
+    /* Smooth transitions */
+}
+
+/* Hover effect for better user interaction */
+.btn.btn2:hover {
+    background: #8e3e83;
+    /* Darken background on hover */
+    transform: translateY(-3px);
+    /* Slightly lift the button */
+}
+
+/* Active state for clear feedback when clicked */
+.btn.btn2:active {
+    background: #680467;
+    /* Darker color on click */
+    transform: translateY(3px);
+    /* Simulate button press by pushing it down */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    /* Add subtle shadow for a pressed effect */
+}
+
+
+
+.contact-right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #8a6285;
+    /* Add a subtle border */
+    outline: none;
+    background: #2f2d2db2;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow for depth */
+}
+
+
+form btn2 {
+    padding: 140px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    /* Ensure the button is the same width as the input fields */
+    border-radius: 6px;
+    background: #9b59b6;
+    color: #ffffff;
+    text-align: center;
+    /* Ensure the text is centered */
+    display: block;
+    /* Ensure it displays as a block-level element */
+
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+    background: #9b59b6;
+    /* Original background */
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s ease;
+}
+
+/* Hover effect to make it clear when users hover over it */
+form .btn2:hover {
+    background: #8e3e83;
+    /* Darker color on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add a shadow */
+    transform: translateY(-2px);
+    /* Slight move up for interaction */
+}
+
+
+/* Active state (when clicked) */
+form .btn2:active {
+    background: #680467;
+    /* Even darker when clicked */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    /* Reduce shadow */
+    transform: translateY(2px);
+    /* Slight move down to show click */
+}
+
+/* Focus state for accessibility */
+form .btn2:focus {
+    outline: none;
+    /* Remove default focus outline */
+    border: 2px solid #8e3e83;
+    /* Add custom focus border */
+}
+
+
+
+
+/*------------Reviews CSS----------------*/
+
+
+#reviews {
+    display: flex;
+    /* Change from grid to flex */
+    justify-content: space-between;
+    grid-template-columns: 1fr 0.8fr;
+    /* Adjust columns for left and right */
+    gap: 40px;
+    /* Space between the columns */
+    margin: 20px 0;
+    opacity: 1;
+
+}
+
+
+.review-left {
+    flex: 1;
+    /* Allow it to take available space */
+    min-width: 500px;
+    /* Set a minimum width if necessary */
+    background-color: #2f2d2db2;
+    /* Optional: Background color for Add a Review section */
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.review-right {
+    flex: 1.2;
+    /* Give it slightly more space */
+    min-width: 200px;
+    /* Adjust as necessary */
+    background-color: #00000069;
+    color: #ddd8d8;
+    /* Text color for contrast */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 8px rgb(200, 1, 140);
+    /* Add subtle shadow */
+    transform: translateY(50px);
+    /* Slide in from below */
+    scroll-behavior: smooth;
+    animation: scrollAnimation 3s ease-in-out;
+    margin-left: 20px;
+    /* Shift the Recent Reviews to the right */
+
+}
+
+
+.review-left p {
+    margin-top: 30px;
+
+}
+
+.review-left p i {
+    margin-right: 15px;
+    color: #8e3e83;
+    font-size: 25PX;
+}
+
+
+
+.btn3.btn4 {
+    display: inline-block;
+    background: #9b59b6;
+    color: #ffffff;
+    /* Change this text color for btn2 */
+    padding: 14px 50px;
+    /* Padding for size */
+    font-size: 18px;
+    /* Font size */
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none;
+    /* No underline */
+    transition: background 0.3s ease, transform 0.2s ease;
+    /* Smooth transitions */
+}
+
+/* Hover effect for better user interaction */
+.btn3.btn4:hover {
+    background: #8e3e83;
+    /* Darken background on hover */
+    transform: translateY(-3px);
+    /* Slightly lift the button */
+}
+
+/* Active state for clear feedback when clicked */
+.btn3.btn4:active {
+    background: #680467;
+    /* Darker color on click */
+    transform: translateY(3px);
+    /* Simulate button press by pushing it down */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    /* Add subtle shadow for a pressed effect */
+}
+
+
+
+.reviewform input,
+.reviewform textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #8a6285;
+    /* Add a subtle border */
+    outline: none;
+    background: #2f2d2db2;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow for depth */
+}
+
+
+.reviewform .btn4 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    /* Ensure the button is the same width as the input fields */
+    border-radius: 6px;
+    background: #9b59b6;
+    color: #ffffff;
+    text-align: center;
+    /* Ensure the text is centered */
+    display: block;
+    /* Ensure it displays as a block-level element */
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s ease;
+
+}
+
+/* Hover effect to make it clear when users hover over it */
+.reviewform .btn4:hover {
+    background: #8e3e83;
+    /* Darker color on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add a shadow */
+    transform: translateY(-2px);
+    /* Slight move up for interaction */
+}
+
+
+/* Active state (when clicked) */
+.reviewform .btn4:active {
+    background: #680467;
+    /* Even darker when clicked */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    /* Reduce shadow */
+    transform: translateY(2px);
+    /* Slight move down to show click */
+}
+
+
+
+/* Focus state for accessibility */
+.reviewform .btn4:focus {
+    outline: none;
+    /* Remove default focus outline */
+    border: 2px solid #8e3e83;
+    /* Add custom focus border */
+}
+
+
+
+
+/*------------RECENT REVIEWS CSS----------------*/
+
+
+
+/* Add keyframes for smooth scrolling animation on the review-right */
+@keyframes scrollAnimation {
+    from {
+        scroll-snap-type: none;
+    }
+
+    to {
+        scroll-snap-type: y mandatory;
+    }
+}
+
+
+.review-item {
+    opacity: 0;
+    transform: translateY(50px);
+    /* Starts slightly lower */
+    transition: all 0.6s ease-out;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    /* Separator between reviews */
+}
+
+
+/* When review comes into view */
+.review-item-visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* Moves into place */
+}
+
+
+.review-item:last-child {
+    border-bottom: none;
+    /* Remove bottom border from last review */
+}
+
+.review-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+    /* Text color for reviews */
+}
+
+.review-item h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    color: #333;
+    /* Reviewer's name color */
+}
+
+.review-right::-webkit-scrollbar {
+    width: 8px;
+}
+
+.review-right::-webkit-scrollbar-thumb {
+    background-color: #f6e9f29a;
+    /* Custom scrollbar color */
+    border-radius: 10px;
+}
+
+
+
+
+.review-right {
+    scroll-behavior: smooth;
+    animation: scrollAnimation 3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #51063f;
+    font-weight: 300;
+    margin-top: 100px;
+    position: relative;
+    clear: both;
+    /* Ensures it's below all floated elements */
+
+}
+
+
+
+/* Default styles for all screens */
+nav .fa-bars,
+nav .fa-circle-xmark {
+    display: none;
+    /* Hide both icons by default */
+}
+
+
+
+
+
+/*------------CSS for small screens----------------*/
+
+@media only screen and (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    #header {
+        background-image: url(Images/phone-image2.jpg) !important;
+        background-size: cover;
+        /* Ensure the image covers the header */
+        background-position: center 100%;
+        /* Ensure it's centered */
+        padding: 20px 0;
+        /* Adjust padding */
+
+    }
+
+    #header::after {
+        content: '';
+        display: hidden;
+        width: 100%;
+        /* Adjust the width of the border line */
+        margin: 350px auto 0 auto;
+        /* Center the border line and add some space */
+        border-bottom: 5px solid #86477900;
+        /* The color and thickness of the line */
+    }
+
+
+
+    .header-text {
+
+
+        /* This allows you to position the element relative to its nearest positioned ancestor */
+        top: 30%;
+        /* Move the text higher by decreasing the percentage */
+        left: 50%;
+        /* Center horizontally */
+        transform: translateX(-50%);
+        /* Adjust for centering */
+        font-size: 30px;
+        display: inline;
+        margin: 10px;
+        padding: 0 10px;
+        /* Reduce padding */
+    }
+
+
+    .header-text h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+    nav .fa-bars,
+    nav .fa-circle-xmark {
+        display: block;
+        font-size: 25px;
+    }
+
+
+    nav ul {
+        background: #000000ec;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: auto;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right o.5s;
+    }
+
+
+
+    nav ul li {
+        display: block;
+        margin: 30px;
+        margin: 10px 30px;
+        /* Increase right margin for more spacing */
+    }
+
+
+    nav ul .fa-bars {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+    }
+
+    nav ul .fa-circle-xmark {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-1 {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+
+    }
+
+    .work-list {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+        align-items: center;
+        /* Center align items if necessary */
+    }
+
+    .work {
+        flex-basis: 100%;
+        /* Make each item take full width on mobile */
+        margin-bottom: 20px;
+        /* Maintain spacing */
+    }
+
+    .contact-left,
+    .contact-Right {
+        flex-basis: 100%;
+
+    }
+
+
+    #reviews {
+        display: flex;
+        /* Ensure flexbox layout is applied */
+        flex-direction: column;
+        /* Stack the columns vertically */
+        align-items: center;
+        /* Center the content */
+        padding: 0 15px;
+        /* Add some padding to ensure content doesn't touch screen edges */
+        width: 100%;
+        /* Ensure it takes up full width of the screen */
+        box-sizing: border-box;
+        /* Ensure padding is included in the width */
+
+
+    }
+
+    /* Adjust the review section width for smaller screens */
+    .review-left,
+    .review-right {
+        width: 100% !important;
+        /* Make both sections take up full width */
+        max-width: 100%;
+        /* Limit the max width to make it visually balanced on larger small screens */
+        margin: 10px auto;
+        /* Center the sections */
+        padding: 20px;
+        /* Add padding for better spacing */
+        box-sizing: border-box;
+        /* Include padding in width calculation */
+    }
+
+    .review-left {
+        /* Ensure Add a Review is not too wide */
+        min-width: unset;
+        /* Reset min-width */
+    }
+
+    /* Add margin between the two sections */
+    .review-right {
+        margin-top: 20px;
+        /* Space between Add a Review and Recent Reviews */
+
+    }
+
+    /* Optional: Add some additional styling to improve readability on mobile */
+    .review-left p,
+    .review-right p {
+        font-size: 14px;
+        /* Reduce the font size slightly on mobile */
+    }
+
+
+
+
+    /* Make the copyright cover the entire width of the screen */
+    footer {
+        width: 100%;
+        text-align: center;
+        /* Center the copyright text */
+        padding: 10px 0;
+        /* Add some padding for spacing */
+        background-color: #000;
+        /* Optional: Set a background color */
+    }
+
+
+    .copyright {
+        font-size: 14px;
+        width: 100%;
+    }
+
+}
+
+
+
+#msg {
+    color: #00ff00;
+    /*Colour for "message sent successfully*/
+    margin-top: -20px;
+    display: block;
+}
+
+
+#reviewmsg {
+    color: #01ff01;
+    /*Colour for "message sent successfully*/
+    margin-top: 20px;
+    display: block;
+}
